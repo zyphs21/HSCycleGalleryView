@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0474E59200E6EAA00DE1106 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */; };
 		C0A829FD200DD0E8007025AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A829FC200DD0E8007025AB /* AppDelegate.swift */; };
 		C0A829FF200DD0E8007025AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A829FE200DD0E8007025AB /* ViewController.swift */; };
 		C0A82A02200DD0E8007025AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A82A00200DD0E8007025AB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0A829F9200DD0E8007025AB /* HSCycleGalleryView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSCycleGalleryView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A829FC200DD0E8007025AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A829FE200DD0E8007025AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				C0A829FC200DD0E8007025AB /* AppDelegate.swift */,
 				C0A829FE200DD0E8007025AB /* ViewController.swift */,
+				C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */,
 				C0A82A00200DD0E8007025AB /* Main.storyboard */,
 				C0A82A03200DD0E8007025AB /* Assets.xcassets */,
 				C0A82A05200DD0E8007025AB /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0474E59200E6EAA00DE1106 /* TestCollectionViewCell.swift in Sources */,
 				C0A829FF200DD0E8007025AB /* ViewController.swift in Sources */,
 				C0A82A11200DD1D7007025AB /* HSCycleGalleryViewLayout.swift in Sources */,
 				C0A82A0F200DD1B8007025AB /* HSCycleGalleryView.swift in Sources */,

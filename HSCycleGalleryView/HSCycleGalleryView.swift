@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol CycleGalleryViewDelegate: class {
+@objc protocol HSCycleGalleryViewDelegate: class {
     
     func numberOfItemInCycleGalleryView(_ cycleGalleryView: HSCycleGalleryView) -> Int
     
@@ -19,7 +19,7 @@ import UIKit
 
 class HSCycleGalleryView: UIView {
     
-    weak var delegate: CycleGalleryViewDelegate?
+    weak var delegate: HSCycleGalleryViewDelegate?
     
     var collectionView: UICollectionView!
     private let groupCount = 200
