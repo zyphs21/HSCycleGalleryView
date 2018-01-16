@@ -12,6 +12,8 @@
 		C0A82A02200DD0E8007025AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A82A00200DD0E8007025AB /* Main.storyboard */; };
 		C0A82A04200DD0E8007025AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A82A03200DD0E8007025AB /* Assets.xcassets */; };
 		C0A82A07200DD0E8007025AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A82A05200DD0E8007025AB /* LaunchScreen.storyboard */; };
+		C0A82A0F200DD1B8007025AB /* HSCycleGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */; };
+		C0A82A11200DD1D7007025AB /* HSCycleGalleryViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C0A82A03200DD0E8007025AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0A82A06200DD0E8007025AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A82A08200DD0E8007025AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCycleGalleryView.swift; sourceTree = "<group>"; };
+		C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCycleGalleryViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C0A82A03200DD0E8007025AB /* Assets.xcassets */,
 				C0A82A05200DD0E8007025AB /* LaunchScreen.storyboard */,
 				C0A82A08200DD0E8007025AB /* Info.plist */,
+				C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */,
+				C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */,
 			);
 			path = HSCycleGalleryView;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A829FF200DD0E8007025AB /* ViewController.swift in Sources */,
+				C0A82A11200DD1D7007025AB /* HSCycleGalleryViewLayout.swift in Sources */,
+				C0A82A0F200DD1B8007025AB /* HSCycleGalleryView.swift in Sources */,
 				C0A829FD200DD0E8007025AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
