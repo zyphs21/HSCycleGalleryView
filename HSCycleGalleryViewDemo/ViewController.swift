@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let pager = HSCycleGalleryView(frame: CGRect(x: 0, y: 40, width: UIScreen.main.bounds.width, height: 200))
-        pager.register(TestCollectionViewCell.self, forCellReuseIdentifier: "TestCollectionViewCell")
+        pager.register(cellClass: TestCollectionViewCell.self, forCellReuseIdentifier: "TestCollectionViewCell")
         pager.delegate = self
         self.view.addSubview(pager)
         pager.reloadData()

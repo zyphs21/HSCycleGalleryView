@@ -22,8 +22,8 @@ public class HSCycleGalleryView: UIView {
     public weak var delegate: HSCycleGalleryViewDelegate?
     
     var collectionView: UICollectionView!
-    private let groupCount = 200
-    private var indexArr = [Int]()
+    fileprivate let groupCount = 200
+    fileprivate var indexArr = [Int]()
     var dataNum: Int = 0
     
     var autoScrollInterval: Double = 3
@@ -83,11 +83,11 @@ extension HSCycleGalleryView {
         collectionView.scrollToItem(at: currentIndexPath, at: .centeredHorizontally, animated: false)
     }
     
-    public func register(_ cellClass: AnyClass?, forCellReuseIdentifier identifier: String) {
+    public func register(cellClass: AnyClass?, forCellReuseIdentifier identifier: String) {
         self.collectionView.register(cellClass, forCellWithReuseIdentifier: identifier)
     }
     
-    public func register(_ nib: UINib?, forCellReuseIdentifier identifier: String) {
+    public func register(nib: UINib?, forCellReuseIdentifier identifier: String) {
         self.collectionView.register(nib, forCellWithReuseIdentifier: identifier)
     }
     

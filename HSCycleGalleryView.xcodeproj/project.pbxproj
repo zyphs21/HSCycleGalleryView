@@ -13,11 +13,12 @@
 		C022857F201041E600E25CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C022857E201041E600E25CF6 /* Assets.xcassets */; };
 		C0228582201041E600E25CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0228580201041E600E25CF6 /* LaunchScreen.storyboard */; };
 		C022859C2010435500E25CF6 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */; };
-		C02285A8201044E800E25CF6 /* HSCycleGalleryView.h in Headers */ = {isa = PBXBuildFile; fileRef = C02285A6201044E800E25CF6 /* HSCycleGalleryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C02285AB201044E800E25CF6 /* HSCycleGalleryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02285A4201044E700E25CF6 /* HSCycleGalleryView.framework */; };
 		C02285AC201044E800E25CF6 /* HSCycleGalleryView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C02285A4201044E700E25CF6 /* HSCycleGalleryView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C02285B12010450600E25CF6 /* HSCycleGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */; };
 		C02285B22010450800E25CF6 /* HSCycleGalleryViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */; };
+		C02285B420106F3300E25CF6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C02285B320106F3300E25CF6 /* Info.plist */; };
+		C02285B720106FE000E25CF6 /* HSCycleGalleryView.h in Headers */ = {isa = PBXBuildFile; fileRef = C02285B520106F3E00E25CF6 /* HSCycleGalleryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,8 @@
 		C0228581201041E600E25CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0228583201041E600E25CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02285A4201044E700E25CF6 /* HSCycleGalleryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSCycleGalleryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C02285A6201044E800E25CF6 /* HSCycleGalleryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSCycleGalleryView.h; sourceTree = "<group>"; };
-		C02285A7201044E800E25CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02285B320106F3300E25CF6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
+		C02285B520106F3E00E25CF6 /* HSCycleGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSCycleGalleryView.h; path = Source/HSCycleGalleryView.h; sourceTree = "<group>"; };
 		C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCycleGalleryView.swift; sourceTree = "<group>"; };
 		C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCycleGalleryViewLayout.swift; sourceTree = "<group>"; };
@@ -96,9 +97,9 @@
 		C02285A5201044E800E25CF6 /* HSCycleGalleryView */ = {
 			isa = PBXGroup;
 			children = (
+				C02285B520106F3E00E25CF6 /* HSCycleGalleryView.h */,
+				C02285B320106F3300E25CF6 /* Info.plist */,
 				C02285B0201044F300E25CF6 /* Source */,
-				C02285A6201044E800E25CF6 /* HSCycleGalleryView.h */,
-				C02285A7201044E800E25CF6 /* Info.plist */,
 			);
 			path = HSCycleGalleryView;
 			sourceTree = "<group>";
@@ -137,7 +138,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02285A8201044E800E25CF6 /* HSCycleGalleryView.h in Headers */,
+				C02285B720106FE000E25CF6 /* HSCycleGalleryView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02285B420106F3300E25CF6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +337,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HSCycleGalleryView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HSCycleGalleryView/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -360,7 +362,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = HSCycleGalleryView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HSCycleGalleryView/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
