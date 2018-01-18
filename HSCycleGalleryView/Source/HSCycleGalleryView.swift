@@ -163,7 +163,7 @@ extension HSCycleGalleryView: UICollectionViewDelegate, UICollectionViewDataSour
         let pointInView = self.convert(collectionView.center, to: collectionView)
         let indexPathNow = collectionView.indexPathForItem(at: pointInView)
         let index = (indexPathNow?.row ?? 0) % dataNum
-        // animate stop , locate to the middle
+        // 重置在中间
         currentIndexPath = IndexPath(item: groupCount / 2 * dataNum + index, section: 0)
         collectionView.scrollToItem(at: currentIndexPath, at: .centeredHorizontally, animated: false)
     }

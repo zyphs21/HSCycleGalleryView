@@ -35,8 +35,9 @@ extension ViewController: HSCycleGalleryViewDelegate {
     }
     
     func cycleGalleryView(_ cycleGalleryView: HSCycleGalleryView, cellForItemAtIndex index: Int) -> UICollectionViewCell {
-        let cell = cycleGalleryView.dequeueReusableCell(withIdentifier: "TestCollectionViewCell", for: IndexPath(item: index, section: 0))
+        let cell = cycleGalleryView.dequeueReusableCell(withIdentifier: "TestCollectionViewCell", for: IndexPath(item: index, section: 0)) as! TestCollectionViewCell
         cell.backgroundColor = colors[index]
+        cell.testLabel.text = "\(index)"
         return cell
     }
     
