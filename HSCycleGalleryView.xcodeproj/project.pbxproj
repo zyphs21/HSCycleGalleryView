@@ -12,20 +12,20 @@
 		C022857D201041E600E25CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C022857B201041E600E25CF6 /* Main.storyboard */; };
 		C022857F201041E600E25CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C022857E201041E600E25CF6 /* Assets.xcassets */; };
 		C0228582201041E600E25CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0228580201041E600E25CF6 /* LaunchScreen.storyboard */; };
-		C02285902010421300E25CF6 /* HSCycleGalleryView.h in Headers */ = {isa = PBXBuildFile; fileRef = C022858E2010421300E25CF6 /* HSCycleGalleryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C02285932010421300E25CF6 /* HSCycleGalleryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */; };
-		C02285942010421300E25CF6 /* HSCycleGalleryView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C022859A2010423300E25CF6 /* HSCycleGalleryViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */; };
-		C022859B2010423600E25CF6 /* HSCycleGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */; };
 		C022859C2010435500E25CF6 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */; };
+		C02285A8201044E800E25CF6 /* HSCycleGalleryView.h in Headers */ = {isa = PBXBuildFile; fileRef = C02285A6201044E800E25CF6 /* HSCycleGalleryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C02285AB201044E800E25CF6 /* HSCycleGalleryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02285A4201044E700E25CF6 /* HSCycleGalleryView.framework */; };
+		C02285AC201044E800E25CF6 /* HSCycleGalleryView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C02285A4201044E700E25CF6 /* HSCycleGalleryView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C02285B12010450600E25CF6 /* HSCycleGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */; };
+		C02285B22010450800E25CF6 /* HSCycleGalleryViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C02285912010421300E25CF6 /* PBXContainerItemProxy */ = {
+		C02285A9201044E800E25CF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C0A829F1200DD0E8007025AB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C022858B2010421300E25CF6;
+			remoteGlobalIDString = C02285A3201044E700E25CF6;
 			remoteInfo = HSCycleGalleryView;
 		};
 /* End PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C02285942010421300E25CF6 /* HSCycleGalleryView.framework in Embed Frameworks */,
+				C02285AC201044E800E25CF6 /* HSCycleGalleryView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,9 +52,9 @@
 		C022857E201041E600E25CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0228581201041E600E25CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0228583201041E600E25CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSCycleGalleryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C022858E2010421300E25CF6 /* HSCycleGalleryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSCycleGalleryView.h; sourceTree = "<group>"; };
-		C022858F2010421300E25CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02285A4201044E700E25CF6 /* HSCycleGalleryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSCycleGalleryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02285A6201044E800E25CF6 /* HSCycleGalleryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSCycleGalleryView.h; sourceTree = "<group>"; };
+		C02285A7201044E800E25CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCycleGalleryView.swift; sourceTree = "<group>"; };
 		C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCycleGalleryViewLayout.swift; sourceTree = "<group>"; };
@@ -65,11 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02285932010421300E25CF6 /* HSCycleGalleryView.framework in Frameworks */,
+				C02285AB201044E800E25CF6 /* HSCycleGalleryView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C02285882010421300E25CF6 /* Frameworks */ = {
+		C02285A0201044E700E25CF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,17 +93,17 @@
 			path = HSCycleGalleryViewDemo;
 			sourceTree = "<group>";
 		};
-		C022858D2010421300E25CF6 /* HSCycleGalleryView */ = {
+		C02285A5201044E800E25CF6 /* HSCycleGalleryView */ = {
 			isa = PBXGroup;
 			children = (
-				C02285992010422100E25CF6 /* Source */,
-				C022858E2010421300E25CF6 /* HSCycleGalleryView.h */,
-				C022858F2010421300E25CF6 /* Info.plist */,
+				C02285B0201044F300E25CF6 /* Source */,
+				C02285A6201044E800E25CF6 /* HSCycleGalleryView.h */,
+				C02285A7201044E800E25CF6 /* Info.plist */,
 			);
 			path = HSCycleGalleryView;
 			sourceTree = "<group>";
 		};
-		C02285992010422100E25CF6 /* Source */ = {
+		C02285B0201044F300E25CF6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */,
@@ -116,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				C0228576201041E600E25CF6 /* HSCycleGalleryViewDemo */,
-				C022858D2010421300E25CF6 /* HSCycleGalleryView */,
+				C02285A5201044E800E25CF6 /* HSCycleGalleryView */,
 				C0A829FA200DD0E8007025AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C0228575201041E600E25CF6 /* HSCycleGalleryViewDemo.app */,
-				C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */,
+				C02285A4201044E700E25CF6 /* HSCycleGalleryView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,11 +133,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C02285892010421300E25CF6 /* Headers */ = {
+		C02285A1201044E700E25CF6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02285902010421300E25CF6 /* HSCycleGalleryView.h in Headers */,
+				C02285A8201044E800E25CF6 /* HSCycleGalleryView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,21 +156,21 @@
 			buildRules = (
 			);
 			dependencies = (
-				C02285922010421300E25CF6 /* PBXTargetDependency */,
+				C02285AA201044E800E25CF6 /* PBXTargetDependency */,
 			);
 			name = HSCycleGalleryViewDemo;
 			productName = HSCycleGalleryViewDemo;
 			productReference = C0228575201041E600E25CF6 /* HSCycleGalleryViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C022858B2010421300E25CF6 /* HSCycleGalleryView */ = {
+		C02285A3201044E700E25CF6 /* HSCycleGalleryView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C02285952010421300E25CF6 /* Build configuration list for PBXNativeTarget "HSCycleGalleryView" */;
+			buildConfigurationList = C02285AF201044E800E25CF6 /* Build configuration list for PBXNativeTarget "HSCycleGalleryView" */;
 			buildPhases = (
-				C02285872010421300E25CF6 /* Sources */,
-				C02285882010421300E25CF6 /* Frameworks */,
-				C02285892010421300E25CF6 /* Headers */,
-				C022858A2010421300E25CF6 /* Resources */,
+				C022859F201044E700E25CF6 /* Sources */,
+				C02285A0201044E700E25CF6 /* Frameworks */,
+				C02285A1201044E700E25CF6 /* Headers */,
+				C02285A2201044E700E25CF6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -178,7 +178,7 @@
 			);
 			name = HSCycleGalleryView;
 			productName = HSCycleGalleryView;
-			productReference = C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */;
+			productReference = C02285A4201044E700E25CF6 /* HSCycleGalleryView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +195,7 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					C022858B2010421300E25CF6 = {
+					C02285A3201044E700E25CF6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -215,7 +215,7 @@
 			projectRoot = "";
 			targets = (
 				C0228574201041E600E25CF6 /* HSCycleGalleryViewDemo */,
-				C022858B2010421300E25CF6 /* HSCycleGalleryView */,
+				C02285A3201044E700E25CF6 /* HSCycleGalleryView */,
 			);
 		};
 /* End PBXProject section */
@@ -231,7 +231,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C022858A2010421300E25CF6 /* Resources */ = {
+		C02285A2201044E700E25CF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,22 +251,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C02285872010421300E25CF6 /* Sources */ = {
+		C022859F201044E700E25CF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C022859A2010423300E25CF6 /* HSCycleGalleryViewLayout.swift in Sources */,
-				C022859B2010423600E25CF6 /* HSCycleGalleryView.swift in Sources */,
+				C02285B12010450600E25CF6 /* HSCycleGalleryView.swift in Sources */,
+				C02285B22010450800E25CF6 /* HSCycleGalleryViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C02285922010421300E25CF6 /* PBXTargetDependency */ = {
+		C02285AA201044E800E25CF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C022858B2010421300E25CF6 /* HSCycleGalleryView */;
-			targetProxy = C02285912010421300E25CF6 /* PBXContainerItemProxy */;
+			target = C02285A3201044E700E25CF6 /* HSCycleGalleryView */;
+			targetProxy = C02285A9201044E800E25CF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -322,7 +322,7 @@
 			};
 			name = Release;
 		};
-		C02285962010421300E25CF6 /* Debug */ = {
+		C02285AD201044E800E25CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -346,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		C02285972010421300E25CF6 /* Release */ = {
+		C02285AE201044E800E25CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -489,11 +489,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C02285952010421300E25CF6 /* Build configuration list for PBXNativeTarget "HSCycleGalleryView" */ = {
+		C02285AF201044E800E25CF6 /* Build configuration list for PBXNativeTarget "HSCycleGalleryView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C02285962010421300E25CF6 /* Debug */,
-				C02285972010421300E25CF6 /* Release */,
+				C02285AD201044E800E25CF6 /* Debug */,
+				C02285AE201044E800E25CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

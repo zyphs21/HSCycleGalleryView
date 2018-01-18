@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol HSCycleGalleryViewDelegate: class {
+@objc public protocol HSCycleGalleryViewDelegate: class {
     
     func numberOfItemInCycleGalleryView(_ cycleGalleryView: HSCycleGalleryView) -> Int
     
@@ -17,9 +17,9 @@ import UIKit
     @objc optional func cycleGalleryView(_ cycleGalleryView: HSCycleGalleryView, didSelectItemCell cell: UICollectionViewCell, at Index: Int)
 }
 
-class HSCycleGalleryView: UIView {
+public class HSCycleGalleryView: UIView {
     
-    weak var delegate: HSCycleGalleryViewDelegate?
+    public weak var delegate: HSCycleGalleryViewDelegate?
     
     var collectionView: UICollectionView!
     private let groupCount = 200
@@ -34,7 +34,7 @@ class HSCycleGalleryView: UIView {
     
     // MARK: - Initialization
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         
         collectionView = UICollectionView(frame: frame, collectionViewLayout: HSCycleGalleryViewLayout())
@@ -47,11 +47,11 @@ class HSCycleGalleryView: UIView {
         self.addSubview(collectionView)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func willMove(toSuperview newSuperview: UIView?) {
+    override public func willMove(toSuperview newSuperview: UIView?) {
         if newSuperview != nil {
             self.removeTimer()
             if self.autoScrollInterval > 0 {
@@ -68,7 +68,7 @@ class HSCycleGalleryView: UIView {
 
 extension HSCycleGalleryView {
     
-    func reloadData() {
+    public func reloadData() {
         guard let dataNum = delegate?.numberOfItemInCycleGalleryView(self) else { return }
         self.dataNum = dataNum
         indexArr.removeAll()
@@ -83,15 +83,15 @@ extension HSCycleGalleryView {
         collectionView.scrollToItem(at: currentIndexPath, at: .centeredHorizontally, animated: false)
     }
     
-    func register(_ cellClass: AnyClass?, forCellReuseIdentifier identifier: String) {
+    public func register(_ cellClass: AnyClass?, forCellReuseIdentifier identifier: String) {
         self.collectionView.register(cellClass, forCellWithReuseIdentifier: identifier)
     }
     
-    func register(_ nib: UINib?, forCellReuseIdentifier identifier: String) {
+    public func register(_ nib: UINib?, forCellReuseIdentifier identifier: String) {
         self.collectionView.register(nib, forCellWithReuseIdentifier: identifier)
     }
     
-    func dequeueReusableCell(withIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionViewCell {
+    public func dequeueReusableCell(withIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
         
         return cell
@@ -139,11 +139,11 @@ extension HSCycleGalleryView {
 
 extension HSCycleGalleryView: UICollectionViewDelegate, UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return indexArr.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard indexArr.count > 0 else { return UICollectionViewCell() }
         let index = indexArr[indexPath.row]
         let dataIndex = index % dataNum
@@ -151,7 +151,7 @@ extension HSCycleGalleryView: UICollectionViewDelegate, UICollectionViewDataSour
         return self.delegate?.cycleGalleryView(self, cellForItemAtIndex: dataIndex) ?? UICollectionViewCell()
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let index = indexArr[indexPath.row]
         let dataIndex = index % dataNum
         let cell = collectionView.cellForItem(at: indexPath) ?? UICollectionViewCell()
@@ -159,7 +159,7 @@ extension HSCycleGalleryView: UICollectionViewDelegate, UICollectionViewDataSour
         delegate?.cycleGalleryView?(self, didSelectItemCell: cell, at: dataIndex)
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let pointInView = self.convert(collectionView.center, to: collectionView)
         let indexPathNow = collectionView.indexPathForItem(at: pointInView)
         let index = (indexPathNow?.row ?? 0) % dataNum
@@ -168,11 +168,11 @@ extension HSCycleGalleryView: UICollectionViewDelegate, UICollectionViewDataSour
         collectionView.scrollToItem(at: currentIndexPath, at: .centeredHorizontally, animated: false)
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         addTimer()
     }
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         removeTimer()
     }
 }

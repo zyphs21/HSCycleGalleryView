@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HSCycleGalleryView
 
 class ViewController: UIViewController {
 
