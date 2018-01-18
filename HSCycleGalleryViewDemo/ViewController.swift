@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  HSCycleGalleryView
+//  HSCycleGalleryViewDemo
 //
-//  Created by Hanson on 2018/1/16.
+//  Created by Hanson on 2018/1/18.
 //  Copyright © 2018年 HansonStudio. All rights reserved.
 //
 
@@ -21,14 +21,14 @@ class ViewController: UIViewController {
         self.view.addSubview(pager)
         pager.reloadData()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
 
 extension ViewController: HSCycleGalleryViewDelegate {
- 
+    
     func numberOfItemInCycleGalleryView(_ cycleGalleryView: HSCycleGalleryView) -> Int {
         return colors.count
     }

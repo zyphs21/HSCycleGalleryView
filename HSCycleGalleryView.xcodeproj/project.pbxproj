@@ -7,31 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0474E59200E6EAA00DE1106 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */; };
-		C0A829FD200DD0E8007025AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A829FC200DD0E8007025AB /* AppDelegate.swift */; };
-		C0A829FF200DD0E8007025AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A829FE200DD0E8007025AB /* ViewController.swift */; };
-		C0A82A02200DD0E8007025AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A82A00200DD0E8007025AB /* Main.storyboard */; };
-		C0A82A04200DD0E8007025AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A82A03200DD0E8007025AB /* Assets.xcassets */; };
-		C0A82A07200DD0E8007025AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A82A05200DD0E8007025AB /* LaunchScreen.storyboard */; };
-		C0A82A0F200DD1B8007025AB /* HSCycleGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */; };
-		C0A82A11200DD1D7007025AB /* HSCycleGalleryViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */; };
+		C0228578201041E600E25CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0228577201041E600E25CF6 /* AppDelegate.swift */; };
+		C022857A201041E600E25CF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0228579201041E600E25CF6 /* ViewController.swift */; };
+		C022857D201041E600E25CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C022857B201041E600E25CF6 /* Main.storyboard */; };
+		C022857F201041E600E25CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C022857E201041E600E25CF6 /* Assets.xcassets */; };
+		C0228582201041E600E25CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0228580201041E600E25CF6 /* LaunchScreen.storyboard */; };
+		C02285902010421300E25CF6 /* HSCycleGalleryView.h in Headers */ = {isa = PBXBuildFile; fileRef = C022858E2010421300E25CF6 /* HSCycleGalleryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C02285932010421300E25CF6 /* HSCycleGalleryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */; };
+		C02285942010421300E25CF6 /* HSCycleGalleryView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C022859A2010423300E25CF6 /* HSCycleGalleryViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */; };
+		C022859B2010423600E25CF6 /* HSCycleGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */; };
+		C022859C2010435500E25CF6 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C02285912010421300E25CF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0A829F1200DD0E8007025AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C022858B2010421300E25CF6;
+			remoteInfo = HSCycleGalleryView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C02285982010421300E25CF6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C02285942010421300E25CF6 /* HSCycleGalleryView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C0228575201041E600E25CF6 /* HSCycleGalleryViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSCycleGalleryViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0228577201041E600E25CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0228579201041E600E25CF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C022857C201041E600E25CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C022857E201041E600E25CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0228581201041E600E25CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0228583201041E600E25CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSCycleGalleryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C022858E2010421300E25CF6 /* HSCycleGalleryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSCycleGalleryView.h; sourceTree = "<group>"; };
+		C022858F2010421300E25CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
-		C0A829F9200DD0E8007025AB /* HSCycleGalleryView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSCycleGalleryView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A829FC200DD0E8007025AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0A829FE200DD0E8007025AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0A82A01200DD0E8007025AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C0A82A03200DD0E8007025AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C0A82A06200DD0E8007025AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C0A82A08200DD0E8007025AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCycleGalleryView.swift; sourceTree = "<group>"; };
 		C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSCycleGalleryViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C0A829F6200DD0E8007025AB /* Frameworks */ = {
+		C0228572201041E600E25CF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02285932010421300E25CF6 /* HSCycleGalleryView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02285882010421300E25CF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,10 +79,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0228576201041E600E25CF6 /* HSCycleGalleryViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C0228577201041E600E25CF6 /* AppDelegate.swift */,
+				C0228579201041E600E25CF6 /* ViewController.swift */,
+				C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */,
+				C022857B201041E600E25CF6 /* Main.storyboard */,
+				C022857E201041E600E25CF6 /* Assets.xcassets */,
+				C0228580201041E600E25CF6 /* LaunchScreen.storyboard */,
+				C0228583201041E600E25CF6 /* Info.plist */,
+			);
+			path = HSCycleGalleryViewDemo;
+			sourceTree = "<group>";
+		};
+		C022858D2010421300E25CF6 /* HSCycleGalleryView */ = {
+			isa = PBXGroup;
+			children = (
+				C02285992010422100E25CF6 /* Source */,
+				C022858E2010421300E25CF6 /* HSCycleGalleryView.h */,
+				C022858F2010421300E25CF6 /* Info.plist */,
+			);
+			path = HSCycleGalleryView;
+			sourceTree = "<group>";
+		};
+		C02285992010422100E25CF6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */,
+				C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		C0A829F0200DD0E8007025AB = {
 			isa = PBXGroup;
 			children = (
-				C0A829FB200DD0E8007025AB /* HSCycleGalleryView */,
+				C0228576201041E600E25CF6 /* HSCycleGalleryViewDemo */,
+				C022858D2010421300E25CF6 /* HSCycleGalleryView */,
 				C0A829FA200DD0E8007025AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,37 +124,53 @@
 		C0A829FA200DD0E8007025AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0A829F9200DD0E8007025AB /* HSCycleGalleryView.app */,
+				C0228575201041E600E25CF6 /* HSCycleGalleryViewDemo.app */,
+				C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C0A829FB200DD0E8007025AB /* HSCycleGalleryView */ = {
-			isa = PBXGroup;
-			children = (
-				C0A829FC200DD0E8007025AB /* AppDelegate.swift */,
-				C0A829FE200DD0E8007025AB /* ViewController.swift */,
-				C0474E58200E6EAA00DE1106 /* TestCollectionViewCell.swift */,
-				C0A82A00200DD0E8007025AB /* Main.storyboard */,
-				C0A82A03200DD0E8007025AB /* Assets.xcassets */,
-				C0A82A05200DD0E8007025AB /* LaunchScreen.storyboard */,
-				C0A82A08200DD0E8007025AB /* Info.plist */,
-				C0A82A0E200DD1B8007025AB /* HSCycleGalleryView.swift */,
-				C0A82A10200DD1D7007025AB /* HSCycleGalleryViewLayout.swift */,
-			);
-			path = HSCycleGalleryView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C02285892010421300E25CF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02285902010421300E25CF6 /* HSCycleGalleryView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		C0A829F8200DD0E8007025AB /* HSCycleGalleryView */ = {
+		C0228574201041E600E25CF6 /* HSCycleGalleryViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0A82A0B200DD0E8007025AB /* Build configuration list for PBXNativeTarget "HSCycleGalleryView" */;
+			buildConfigurationList = C0228586201041E600E25CF6 /* Build configuration list for PBXNativeTarget "HSCycleGalleryViewDemo" */;
 			buildPhases = (
-				C0A829F5200DD0E8007025AB /* Sources */,
-				C0A829F6200DD0E8007025AB /* Frameworks */,
-				C0A829F7200DD0E8007025AB /* Resources */,
+				C0228571201041E600E25CF6 /* Sources */,
+				C0228572201041E600E25CF6 /* Frameworks */,
+				C0228573201041E600E25CF6 /* Resources */,
+				C02285982010421300E25CF6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C02285922010421300E25CF6 /* PBXTargetDependency */,
+			);
+			name = HSCycleGalleryViewDemo;
+			productName = HSCycleGalleryViewDemo;
+			productReference = C0228575201041E600E25CF6 /* HSCycleGalleryViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C022858B2010421300E25CF6 /* HSCycleGalleryView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02285952010421300E25CF6 /* Build configuration list for PBXNativeTarget "HSCycleGalleryView" */;
+			buildPhases = (
+				C02285872010421300E25CF6 /* Sources */,
+				C02285882010421300E25CF6 /* Frameworks */,
+				C02285892010421300E25CF6 /* Headers */,
+				C022858A2010421300E25CF6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -90,8 +178,8 @@
 			);
 			name = HSCycleGalleryView;
 			productName = HSCycleGalleryView;
-			productReference = C0A829F9200DD0E8007025AB /* HSCycleGalleryView.app */;
-			productType = "com.apple.product-type.application";
+			productReference = C022858C2010421300E25CF6 /* HSCycleGalleryView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,7 +191,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = HansonStudio;
 				TargetAttributes = {
-					C0A829F8200DD0E8007025AB = {
+					C0228574201041E600E25CF6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C022858B2010421300E25CF6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -122,52 +214,75 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0A829F8200DD0E8007025AB /* HSCycleGalleryView */,
+				C0228574201041E600E25CF6 /* HSCycleGalleryViewDemo */,
+				C022858B2010421300E25CF6 /* HSCycleGalleryView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C0A829F7200DD0E8007025AB /* Resources */ = {
+		C0228573201041E600E25CF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0A82A07200DD0E8007025AB /* LaunchScreen.storyboard in Resources */,
-				C0A82A04200DD0E8007025AB /* Assets.xcassets in Resources */,
-				C0A82A02200DD0E8007025AB /* Main.storyboard in Resources */,
+				C0228582201041E600E25CF6 /* LaunchScreen.storyboard in Resources */,
+				C022857F201041E600E25CF6 /* Assets.xcassets in Resources */,
+				C022857D201041E600E25CF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C022858A2010421300E25CF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C0A829F5200DD0E8007025AB /* Sources */ = {
+		C0228571201041E600E25CF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0474E59200E6EAA00DE1106 /* TestCollectionViewCell.swift in Sources */,
-				C0A829FF200DD0E8007025AB /* ViewController.swift in Sources */,
-				C0A82A11200DD1D7007025AB /* HSCycleGalleryViewLayout.swift in Sources */,
-				C0A82A0F200DD1B8007025AB /* HSCycleGalleryView.swift in Sources */,
-				C0A829FD200DD0E8007025AB /* AppDelegate.swift in Sources */,
+				C022859C2010435500E25CF6 /* TestCollectionViewCell.swift in Sources */,
+				C022857A201041E600E25CF6 /* ViewController.swift in Sources */,
+				C0228578201041E600E25CF6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02285872010421300E25CF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C022859A2010423300E25CF6 /* HSCycleGalleryViewLayout.swift in Sources */,
+				C022859B2010423600E25CF6 /* HSCycleGalleryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C02285922010421300E25CF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C022858B2010421300E25CF6 /* HSCycleGalleryView */;
+			targetProxy = C02285912010421300E25CF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		C0A82A00200DD0E8007025AB /* Main.storyboard */ = {
+		C022857B201041E600E25CF6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C0A82A01200DD0E8007025AB /* Base */,
+				C022857C201041E600E25CF6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C0A82A05200DD0E8007025AB /* LaunchScreen.storyboard */ = {
+		C0228580201041E600E25CF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C0A82A06200DD0E8007025AB /* Base */,
+				C0228581201041E600E25CF6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -175,6 +290,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C0228584201041E600E25CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XC238MH24L;
+				INFOPLIST_FILE = HSCycleGalleryViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.HSCycleGalleryViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0228585201041E600E25CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XC238MH24L;
+				INFOPLIST_FILE = HSCycleGalleryViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.HSCycleGalleryViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C02285962010421300E25CF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XC238MH24L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HSCycleGalleryView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.HSCycleGalleryView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C02285972010421300E25CF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XC238MH24L;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HSCycleGalleryView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.HSCycleGalleryView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C0A82A09200DD0E8007025AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,55 +477,32 @@
 			};
 			name = Release;
 		};
-		C0A82A0C200DD0E8007025AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XC238MH24L;
-				INFOPLIST_FILE = HSCycleGalleryView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.HSCycleGalleryView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C0A82A0D200DD0E8007025AB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XC238MH24L;
-				INFOPLIST_FILE = HSCycleGalleryView/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.HansonStudio.HSCycleGalleryView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C0228586201041E600E25CF6 /* Build configuration list for PBXNativeTarget "HSCycleGalleryViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0228584201041E600E25CF6 /* Debug */,
+				C0228585201041E600E25CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02285952010421300E25CF6 /* Build configuration list for PBXNativeTarget "HSCycleGalleryView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02285962010421300E25CF6 /* Debug */,
+				C02285972010421300E25CF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C0A829F4200DD0E8007025AB /* Build configuration list for PBXProject "HSCycleGalleryView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0A82A09200DD0E8007025AB /* Debug */,
 				C0A82A0A200DD0E8007025AB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0A82A0B200DD0E8007025AB /* Build configuration list for PBXNativeTarget "HSCycleGalleryView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0A82A0C200DD0E8007025AB /* Debug */,
-				C0A82A0D200DD0E8007025AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

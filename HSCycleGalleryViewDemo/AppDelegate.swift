@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HSCycleGalleryView
+//  HSCycleGalleryViewDemo
 //
-//  Created by Hanson on 2018/1/16.
+//  Created by Hanson on 2018/1/18.
 //  Copyright © 2018年 HansonStudio. All rights reserved.
 //
 
