@@ -15,6 +15,10 @@ a simple  carousel view using UICollectionView
 ### manual
 simply drag the source folder from HSCycleGalleryView into your project
 
+### CocoaPods
+
+add `pod 'HSCycleGalleryView'` to your Podfile
+
 
 ## License
 
