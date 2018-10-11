@@ -25,7 +25,7 @@ class HSCycleGalleryViewLayout: UICollectionViewFlowLayout {
         // 为了让第一张图片与最后一张图片出现在最中央
         let left = (self.collectionView!.bounds.width - itemWidth) / 2
         let top = (self.collectionView!.bounds.height - itemHeight) / 2
-        self.sectionInset = UIEdgeInsetsMake(top, left, top, left)
+        self.sectionInset = UIEdgeInsets.init(top: top, left: left, bottom: top, right: left)
         
     }
     
