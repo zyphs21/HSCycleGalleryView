@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.platform          = :ios, "8.0"
   s.source            = { :git => "https://github.com/zyphs21/HSCycleGalleryView.git", :tag => s.version.to_s }
   s.source_files      = "HSCycleGalleryView/**/*.{h,m,swift}"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 end
