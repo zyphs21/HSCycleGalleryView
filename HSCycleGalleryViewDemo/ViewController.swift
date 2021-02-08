@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let pager = HSCycleGalleryView(frame: CGRect(x: 0, y: 40, width: UIScreen.main.bounds.width, height: 200))
+        pager.autoScrollInterval = 0
         pager.register(cellClass: TestCollectionViewCell.self, forCellReuseIdentifier: "TestCollectionViewCell")
         pager.delegate = self
         self.view.addSubview(pager)
@@ -26,6 +27,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func test(_ sender: Any) {
+        let vc = TestViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
 extension ViewController: HSCycleGalleryViewDelegate {
