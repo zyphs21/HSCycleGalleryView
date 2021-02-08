@@ -24,13 +24,19 @@ public class HSCycleGalleryView: UIView {
     /// if set to 0, the gallery view will not auto scroll
     public var autoScrollInterval: Double = 3
     
-    var collectionView: UICollectionView!
-    fileprivate let groupCount = 200
-    fileprivate var indexArr = [Int]()
-    var dataNum: Int = 0
+    public var contentBackgroundColor = UIColor.white {
+        didSet {
+            collectionView.backgroundColor = contentBackgroundColor
+        }
+    }
+    
+    private var collectionView: UICollectionView!
+    private let groupCount = 200
+    private var indexArr = [Int]()
+    private var dataNum: Int = 0
 
-    var timer: Timer?
-    var currentIndexPath: IndexPath!
+    private var timer: Timer?
+    private var currentIndexPath: IndexPath!
     
     
     // MARK: - Initialization
@@ -41,7 +47,7 @@ public class HSCycleGalleryView: UIView {
         collectionView = UICollectionView(frame: frame, collectionViewLayout: HSCycleGalleryViewLayout())
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
-        collectionView.backgroundColor = UIColor.white
+        collectionView.backgroundColor = contentBackgroundColor
         collectionView.delegate = self
         collectionView.dataSource = self
         
