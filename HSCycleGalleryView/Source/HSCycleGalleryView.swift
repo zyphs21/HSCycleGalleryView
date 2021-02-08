@@ -21,13 +21,14 @@ public class HSCycleGalleryView: UIView {
     
     public weak var delegate: HSCycleGalleryViewDelegate?
     
+    /// if set to 0, the gallery view will not auto scroll
+    public var autoScrollInterval: Double = 3
+    
     var collectionView: UICollectionView!
     fileprivate let groupCount = 200
     fileprivate var indexArr = [Int]()
     var dataNum: Int = 0
-    
-    var autoScrollInterval: Double = 3
-    
+
     var timer: Timer?
     var currentIndexPath: IndexPath!
     
@@ -53,12 +54,10 @@ public class HSCycleGalleryView: UIView {
     
     override public func willMove(toSuperview newSuperview: UIView?) {
         if newSuperview != nil {
-            self.removeTimer()
-            if self.autoScrollInterval > 0 {
-                self.addTimer()
-            }
+            removeTimer()
+            addTimer()
         } else {
-            self.removeTimer()
+            removeTimer()
         }
     }
 }
@@ -109,19 +108,16 @@ extension HSCycleGalleryView {
     }
     
     func addTimer() {
-        if timer != nil {
-            return
-        }
+        guard autoScrollInterval > 0 else { return }
+        guard timer == nil else { return }
         timer = Timer(timeInterval: autoScrollInterval, target: self, selector: #selector(autoScroll), userInfo: nil, repeats: true)
         RunLoop.main.add(timer!, forMode: RunLoop.Mode.common)
-        //        timer = Timer.scheduledTimer(timeInterval: TimeInterval(autoScrollInterval), target: self, selector: #selector(autoScroll), userInfo: nil, repeats: true)
     }
     
     @objc func autoScroll() {
         if self.superview == nil || self.window == nil {
             return
         }
-        print("timer-autoScroll")
         self.scrollToNextIndex()
     }
     
@@ -163,7 +159,7 @@ extension HSCycleGalleryView: UICollectionViewDelegate, UICollectionViewDataSour
         let pointInView = self.convert(collectionView.center, to: collectionView)
         let indexPathNow = collectionView.indexPathForItem(at: pointInView)
         let index = (indexPathNow?.row ?? 0) % dataNum
-        // 重置在中间
+        // Reset to the middle position
         currentIndexPath = IndexPath(item: groupCount / 2 * dataNum + index, section: 0)
         collectionView.scrollToItem(at: currentIndexPath, at: .centeredHorizontally, animated: false)
     }
